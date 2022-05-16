@@ -48,6 +48,6 @@ jobs:
           file: ./Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/simplewhale:latest
+          tags: ghcr.io/${{ github.vidurasathsara99 }}/simplewhale:latest
           cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/simplewhale:buildcache
           cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/simplewhale:buildcache,mode=max
